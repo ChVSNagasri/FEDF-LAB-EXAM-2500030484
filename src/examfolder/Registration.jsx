@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './main2.css'
+import '../index.css'
 export default function Registration() {
 
   const [name,setName] = useState("")
@@ -40,11 +41,12 @@ export default function Registration() {
       <form onSubmit={handleSubmit}>
 
         <label><b>Enter Your Name:</b></label>
-        <input value={name} required onChange={(e)=>setName(e.target.value)} />
+        <input className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500"
+  value={name} required onChange={(e)=>setName(e.target.value)} />
         <pre></pre>
 
         <label><b>Select Product:</b></label>
-        <select value={product} onChange={(e)=>setProduct(e.target.value)} required>
+        <select className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500" value={product} onChange={(e)=>setProduct(e.target.value)} required>
           <option value="">Select</option>
           <option>Hand Bags</option>
           <option>Lipstick</option>
@@ -55,7 +57,7 @@ export default function Registration() {
         <pre></pre>
 
         <label><b>Select Quantity:</b></label>
-        <select value={quantity} onChange={(e)=>setQuantity(e.target.value)} required>
+        <select className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500" value={quantity} onChange={(e)=>setQuantity(e.target.value)} required>
           <option value="">Select</option>
           <option>1</option>
           <option>2</option>
@@ -66,11 +68,11 @@ export default function Registration() {
         <pre></pre>
 
         <label><b>Color of your choice:</b></label>
-        <input value={color} required onChange={(e)=>setColor(e.target.value)} />
+        <input className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500" value={color} required onChange={(e)=>setColor(e.target.value)} />
         <pre></pre>
 
         <label><b>Enter your required brand:</b></label>
-        <input value={brand} required onChange={(e)=>setBrand(e.target.value)} />
+        <input className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500" value={brand} required onChange={(e)=>setBrand(e.target.value)} />
         <pre></pre>
 
         <button type="submit">Submit</button>
