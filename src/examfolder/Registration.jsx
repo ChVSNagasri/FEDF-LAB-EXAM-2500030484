@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './nav.css'
 import './main2.css'
 export default function Registration() {
 
@@ -35,7 +34,7 @@ export default function Registration() {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Shop Your Product Here</h1>
 
       <form onSubmit={handleSubmit}>

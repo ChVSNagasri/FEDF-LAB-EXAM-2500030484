@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import './table.css'
 export default function ViewRegisters(){
 
   const [users,setUsers] = useState([]);
@@ -20,9 +20,9 @@ export default function ViewRegisters(){
 
   return(
 
-    <div>
+    <div className="table-container">
 
-      <h2>Registered Users</h2>
+      <h2>Added Products</h2>
 
       <table border="1" cellPadding="10" bgColor="bisque">
 
@@ -41,7 +41,7 @@ export default function ViewRegisters(){
 
         {users.length === 0 ? (
           <tr>
-            <td colSpan="5">No Users Registered</td>
+            <td colSpan="5">No Product is Added</td>
           </tr>
         ) : (
 

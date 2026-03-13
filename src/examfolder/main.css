@@ -2,10 +2,24 @@ h1{
     color:blue;
         text-align: center;
 }
-img{
-    margin-left:600px;
-}
+
 strong{
     color:rgb(97, 97, 243);
-    margin-left:400px;
+  
+}
+.card{
+    width: 400px;
+    margin: 80px auto;
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.card img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
 }

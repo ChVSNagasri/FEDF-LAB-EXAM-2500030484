@@ -9,3 +9,12 @@ select{
      border-color:blue;
     margin-left: 10px;
 }
+.container{
+    width: 420px;
+    margin: 60px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    text-align: left;
+}

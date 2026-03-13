@@ -7,7 +7,7 @@ export default function Home() {
         <h1 >Welcome to Product exploring page</h1>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHOCzaEM17rj4LhXRx3nOezr76b-3BZ_WN_A&s" alt="product"/>
         <pre></pre>
-        <strong>In this site you can add the product of your choice and can store your choices using local storage </strong>
+        <strong>In this site you can add the product of your choice and can store your choices using local storage and kindly enter your name to check whose </strong>
         </div>
     </div>
   )
