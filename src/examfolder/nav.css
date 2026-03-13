@@ -1,0 +1,18 @@
+nav{
+    background-color: rgb(203, 237, 152);
+   
+    height:50px;
+}
+button{
+    background-color: rgb(250, 208, 242);
+    cursor:pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+button :hover{
+    background-color: rgb(207, 250, 250);
+}
+.label{
+    color:rgb(52, 16, 236);
+}
