@@ -75,7 +75,7 @@ export default function Registration() {
         <input className="w-full border border-gray-400 rounded-md p-2 mt-1 focus:outline-none focus:border-blue-500" value={brand} required onChange={(e)=>setBrand(e.target.value)} />
         <pre></pre>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Add Product</button>
 
       </form>
     </div>
