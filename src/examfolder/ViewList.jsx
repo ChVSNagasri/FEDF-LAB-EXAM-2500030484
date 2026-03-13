@@ -24,7 +24,7 @@ export default function ViewRegisters(){
 
       <h2>Registered Users</h2>
 
-      <table border="1" cellPadding="10">
+      <table border="1" cellPadding="10" bgColor="bisque">
 
         <thead>
           <tr>
@@ -33,7 +33,7 @@ export default function ViewRegisters(){
             <th>Product</th>
             <th>Color</th>
               <th>Quantity</th>
-            <th>Location</th>
+            <th>Brand</th>
           </tr>
         </thead>
 
@@ -52,7 +52,7 @@ export default function ViewRegisters(){
               <td>{user.product}</td>
                <td>{user.quantity}</td>
               <td>{user.color}</td>
-              <td>{user.location}</td>
+              <td>{user.brand}</td>
             </tr>
           ))
 

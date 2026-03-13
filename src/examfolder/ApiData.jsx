@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
+import './table.css'
 export default function ApiData()
  {
     const [data,setData]=useState([])
@@ -29,7 +30,7 @@ export default function ApiData()
       {
         error?<b>{error}</b>:
         data.length==0?<strong>Loading...................</strong>:
-        <table border={10}>
+        <table border={10} bgColor='bisque'>
             <tr>
                 <th>USER ID</th>
                 <th>ID</th>
@@ -53,7 +54,7 @@ export default function ApiData()
         }
         </table>
       }    
-      <h1>Total Length:{data.length}</h1> 
+      <h1> Length of the Given Data:{data.length}</h1> 
     </div>
   )
 }

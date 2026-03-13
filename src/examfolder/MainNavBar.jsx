@@ -11,8 +11,8 @@ export default function MainNavBar() {
     <div>
         <nav className="nav">
             <Link to="/"><button>Home</button></Link>
-             <Link to="/registration"><button>Registration</button></Link>
-              <Link to="/viewusers"><button>View Registers</button></Link>
+             <Link to="/registration"><button>Add Products</button></Link>
+              <Link to="/viewusers"><button>View Products</button></Link>
                <Link to="/api"><button>API</button></Link>
                 </nav>
                <Routes>

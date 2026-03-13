@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import './nav.css'
-
+import './main2.css'
 export default function Registration() {
 
   const [name,setName] = useState("")
   const [product,setProduct] = useState("")
   const [quantity,setQuantity] = useState("")
   const [color,setColor]=useState("")
-  const [location,setLocation] = useState("")
+  const [brand,setBrand] = useState("")
 
   const handleSubmit = (e) => {
 
     e.preventDefault()
 
-    const user = {name,product,quantity,color,location}
+    const user = {name,product,quantity,color,brand}
 
     let users = JSON.parse(localStorage.getItem("userData"))
 
@@ -31,7 +31,7 @@ export default function Registration() {
     setProduct("")
     setColor("")
     setQuantity("")
-    setLocation("")
+    setBrand("")
   }
 
   return (
@@ -40,11 +40,11 @@ export default function Registration() {
 
       <form onSubmit={handleSubmit}>
 
-        <label>Enter Your Name:</label>
+        <label><b>Enter Your Name:</b></label>
         <input value={name} required onChange={(e)=>setName(e.target.value)} />
         <pre></pre>
 
-        <label>Select Product:</label>
+        <label><b>Select Product:</b></label>
         <select value={product} onChange={(e)=>setProduct(e.target.value)} required>
           <option value="">Select</option>
           <option>Hand Bags</option>
@@ -55,7 +55,7 @@ export default function Registration() {
         </select>
         <pre></pre>
 
-        <label>Select Quantity:</label>
+        <label><b>Select Quantity:</b></label>
         <select value={quantity} onChange={(e)=>setQuantity(e.target.value)} required>
           <option value="">Select</option>
           <option>1</option>
@@ -66,12 +66,12 @@ export default function Registration() {
         </select>
         <pre></pre>
 
-        <label>Color of your choice:</label>
+        <label><b>Color of your choice:</b></label>
         <input value={color} required onChange={(e)=>setColor(e.target.value)} />
         <pre></pre>
 
-        <label>Enter your Address to deliver your order:</label>
-        <input value={location} required onChange={(e)=>setLocation(e.target.value)} />
+        <label><b>Enter your required brand:</b></label>
+        <input value={brand} required onChange={(e)=>setBrand(e.target.value)} />
         <pre></pre>
 
         <button type="submit">Submit</button>

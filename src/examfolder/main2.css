@@ -1,0 +1,11 @@
+input{
+    border-color:blue;
+    margin-left: 10px;
+}
+label{
+    color:blueviolet
+}
+select{
+     border-color:blue;
+    margin-left: 10px;
+}
